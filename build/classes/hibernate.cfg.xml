@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+    <property name="hibernate.connection.url">jdbc:sqlite:d:\Dokumenty\NetBeansProjects\TableSoccer\db\TableSoccer.sql</property>
+    <property name="dialect">cz.tpsoft.tablesoccer.data.SQLiteDialect</property>
+    <property name="show_sql">true</property>
+    <mapping resource="cz/tpsoft/tablesoccer/data/model/Team.hbm.xml"/>
+    <mapping resource="cz/tpsoft/tablesoccer/data/model/Game.hbm.xml"/>
+    <mapping resource="cz/tpsoft/tablesoccer/data/model/Player.hbm.xml"/>
+    <mapping resource="cz/tpsoft/tablesoccer/data/model/League.hbm.xml"/>
+    <mapping resource="cz/tpsoft/tablesoccer/data/model/Match.hbm.xml"/>
+    <mapping resource="cz/tpsoft/tablesoccer/data/model/GamePlayer.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

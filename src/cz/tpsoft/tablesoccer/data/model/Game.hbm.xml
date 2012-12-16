@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14.12.2012 13:40:41 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="cz.tpsoft.tablesoccer.data.model.Game" table="Game">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="number" type="int">
+            <column name="number" not-null="true" />
+        </property>
+        <property name="type" type="int">
+            <column name="type" not-null="true" />
+        </property>
+        <property name="homeScore" type="java.lang.Integer">
+            <column name="home_score" />
+        </property>
+        <property name="awayScore" type="java.lang.Integer">
+            <column name="away_score" />
+        </property>
+        <property name="matchId" type="int">
+            <column name="match_id" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

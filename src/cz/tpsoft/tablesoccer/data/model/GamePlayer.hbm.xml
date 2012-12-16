@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14.12.2012 13:40:41 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="cz.tpsoft.tablesoccer.data.model.GamePlayer" table="GamePlayer">
+        <composite-id name="id" class="cz.tpsoft.tablesoccer.data.model.GamePlayerId">
+            <key-property name="gameId" type="int">
+                <column name="game_id" />
+            </key-property>
+            <key-property name="playerId" type="int">
+                <column name="player_id" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

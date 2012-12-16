@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14.12.2012 13:40:41 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="cz.tpsoft.tablesoccer.data.model.Match" table="Match">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="leagueId" type="java.lang.Integer">
+            <column name="league_id" />
+        </property>
+        <property name="season" type="int">
+            <column name="season" not-null="true" />
+        </property>
+        <property name="round" type="int">
+            <column name="round" not-null="true" />
+        </property>
+        <property name="type" type="int">
+            <column name="type" not-null="true" />
+        </property>
+        <property name="date" type="string">
+            <column name="date" length="2000000000" not-null="true" />
+        </property>
+        <property name="resultHome" type="java.lang.Integer">
+            <column name="result_home" />
+        </property>
+        <property name="resultAway" type="java.lang.Integer">
+            <column name="result_away" />
+        </property>
+        <property name="homeTeamId" type="java.lang.Integer">
+            <column name="home_team_id" />
+        </property>
+        <property name="awayTeamId" type="java.lang.Integer">
+            <column name="away_team_id" />
+        </property>
+    </class>
+</hibernate-mapping>

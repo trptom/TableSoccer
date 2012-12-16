@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14.12.2012 13:40:41 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="cz.tpsoft.tablesoccer.data.model.Player" table="Player">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="2000000000" />
+        </property>
+        <property name="secondName" type="string">
+            <column name="second_name" length="2000000000" />
+        </property>
+        <property name="nickName" type="string">
+            <column name="nick_name" length="2000000000" />
+        </property>
+        <property name="teamId" type="string">
+            <column name="team_id" length="2000000000" />
+        </property>
+    </class>
+</hibernate-mapping>

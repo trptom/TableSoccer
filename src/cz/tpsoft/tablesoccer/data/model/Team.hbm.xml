@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14.12.2012 13:40:41 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="cz.tpsoft.tablesoccer.data.model.Team" table="Team">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="league" class="cz.tpsoft.tablesoccer.data.model.League" fetch="select">
+            <column name="league_id" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="2000000000" not-null="true" />
+        </property>
+        <property name="shortcut" type="string">
+            <column name="shortcut" length="2000000000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
